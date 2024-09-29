@@ -1,0 +1,170 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    font-family: "Outfit", sans-serif;
+
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+
+    background-color: var(--stone-100);
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+#root, #__next {
+    isolation: isolate;
+}
+
+:root {
+    --white: hsl(0, 0%, 100%);
+
+    --stone-100: hsl(30, 54%, 90%);
+    --stone-150: hsl(30, 18%, 87%);
+    --stone-600: hsl(30, 10%, 34%);
+    --stone-900: hsl(24, 5%, 18%);
+
+    --brown-800: hsl(14, 45%, 36%);
+
+    --rose-800: hsl(332, 51%, 32%);
+    --rose-50: hsl(330, 100%, 98%);   
+}
+
+main {
+    display: block;
+    max-width: 480px;
+
+    background-color: var(--white);
+    color: var(--stone-600);
+
+    font-size: 11px;
+}
+
+h1, h2, h3 {
+    font-family: "Young Serif", system-ui;
+    font-weight: 400;
+}
+
+h2 {
+    font-size: 1.6rem;
+    color: black;
+}
+
+h3 {
+    font-size: 1.2rem;
+    color: var(--brown-800);
+    margin: 0.5rem 0;
+}
+
+.text-area {
+    padding: 0 1.4rem 1.5rem;
+}
+
+.times {
+    display: block;
+    margin: 1.5rem auto 0;
+    padding: 0.5rem 1rem 0.8rem;
+    border-radius: 0.5rem;
+    font-size: 0.65rem;
+
+    line-height: 200%;
+
+    background-color: var(--rose-50);
+}
+
+.times p {
+    color: var(--rose-800);
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 0.3rem;
+}
+
+.times ul {
+    padding-left: 1.2rem;
+}
+
+.times li::marker {
+    font-size: 8px;
+}
+
+.ingredients-container {
+    margin: 1rem auto;
+}
+
+.ingredients {
+    line-height: 1.4rem;
+}
+
+.ingredients li::marker {
+    font-size: 8px;
+}
+
+ul {
+    list-style-position: outside;
+    padding-left: 1rem;
+}
+
+li {
+    padding-left: 0.6rem;
+}
+
+li::marker {
+    color: var(--rose-800);
+    font-weight: 700;
+}
+
+.instruction-container {
+    padding: 1rem 0;
+    margin-bottom: 1rem;
+    border-top: 0.01rem solid var(--stone-150);
+    border-bottom: 0.01rem solid var(--stone-150);
+}
+
+.instruction {
+    list-style: decimal;
+}
+
+table {
+    width: 100%;
+}
+
+table b {
+    color: var(--rose-800)
+}
+
+td {
+    border-bottom: 0.01rem solid var(--stone-150);
+    padding: 0.5rem 1rem;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+@media (min-width: 440px) {
+    main {
+        margin: 3rem auto;
+        border-radius: 1.2rem;
+    }
+
+    img {
+        padding: 1.5rem;
+        border-radius: 2rem;
+    }
+}
